@@ -16,6 +16,11 @@
 		BCBB3E272075597800C561D9 /* MusicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB3E262075597800C561D9 /* MusicAppTests.swift */; };
 		BCBB3E322075597800C561D9 /* MusicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB3E312075597800C561D9 /* MusicAppUITests.swift */; };
 		BCBB3E4120755EAC00C561D9 /* sample1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBB3E4020755EAC00C561D9 /* sample1.mp3 */; };
+		BCED4288208D414A00355804 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED4287208D414A00355804 /* MainViewController.swift */; };
+		BCED428D208D439700355804 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCED428A208D439700355804 /* SpotifyAuthentication.framework */; };
+		BCED428E208D439700355804 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCED428B208D439700355804 /* SpotifyMetadata.framework */; };
+		BCED428F208D439700355804 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCED428C208D439700355804 /* SpotifyAudioPlayback.framework */; };
+		BCED4298208D446A00355804 /* BridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED4297208D446A00355804 /* BridgeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,12 @@
 		BCBB3E312075597800C561D9 /* MusicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppUITests.swift; sourceTree = "<group>"; };
 		BCBB3E332075597800C561D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCBB3E4020755EAC00C561D9 /* sample1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample1.mp3; sourceTree = "<group>"; };
+		BCED4287208D414A00355804 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BCED428A208D439700355804 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAuthentication.framework; path = "../../../ios-sdk-master/SpotifyAuthentication.framework"; sourceTree = "<group>"; };
+		BCED428B208D439700355804 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyMetadata.framework; path = "../../../ios-sdk-master/SpotifyMetadata.framework"; sourceTree = "<group>"; };
+		BCED428C208D439700355804 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAudioPlayback.framework; path = "../../../ios-sdk-master/SpotifyAudioPlayback.framework"; sourceTree = "<group>"; };
+		BCED4296208D446A00355804 /* BridgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeViewController.h; sourceTree = "<group>"; };
+		BCED4297208D446A00355804 /* BridgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCED428E208D439700355804 /* SpotifyMetadata.framework in Frameworks */,
+				BCED428D208D439700355804 /* SpotifyAuthentication.framework in Frameworks */,
+				BCED428F208D439700355804 /* SpotifyAudioPlayback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,11 +118,15 @@
 				BCBB3E3F20755E0800C561D9 /* Music */,
 				BCBB3E0F2075597800C561D9 /* AppDelegate.swift */,
 				BCBB3E112075597800C561D9 /* FirstViewController.swift */,
+				BCED4287208D414A00355804 /* MainViewController.swift */,
 				BCBB3E132075597800C561D9 /* SecondViewController.swift */,
 				BCBB3E152075597800C561D9 /* Main.storyboard */,
 				BCBB3E182075597800C561D9 /* Assets.xcassets */,
 				BCBB3E1A2075597800C561D9 /* LaunchScreen.storyboard */,
 				BCBB3E1D2075597800C561D9 /* Info.plist */,
+				BCED4289208D437A00355804 /* frameworks */,
+				BCED4296208D446A00355804 /* BridgeViewController.h */,
+				BCED4297208D446A00355804 /* BridgeViewController.m */,
 			);
 			path = MusicApp;
 			sourceTree = "<group>";
@@ -137,6 +155,16 @@
 				BCBB3E4020755EAC00C561D9 /* sample1.mp3 */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		BCED4289208D437A00355804 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCED428C208D439700355804 /* SpotifyAudioPlayback.framework */,
+				BCED428A208D439700355804 /* SpotifyAuthentication.framework */,
+				BCED428B208D439700355804 /* SpotifyMetadata.framework */,
+			);
+			path = frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +235,7 @@
 				TargetAttributes = {
 					BCBB3E0B2075597800C561D9 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					BCBB3E212075597800C561D9 = {
@@ -277,6 +306,8 @@
 				BCBB3E142075597800C561D9 /* SecondViewController.swift in Sources */,
 				BCBB3E102075597800C561D9 /* AppDelegate.swift in Sources */,
 				BCBB3E122075597800C561D9 /* FirstViewController.swift in Sources */,
+				BCED4298208D446A00355804 /* BridgeViewController.m in Sources */,
+				BCED4288208D414A00355804 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,14 +473,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RDW49Q42U8;
 				INFOPLIST_FILE = MusicApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = customapp.MusicApp;
+				PRODUCT_BUNDLE_IDENTIFIER = customapp.RePlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicApp/MusicApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,14 +493,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RDW49Q42U8;
 				INFOPLIST_FILE = MusicApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = customapp.MusicApp;
+				PRODUCT_BUNDLE_IDENTIFIER = customapp.RePlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicApp/MusicApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
