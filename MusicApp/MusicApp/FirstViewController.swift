@@ -11,6 +11,8 @@ import AVFoundation
 
 class FirstViewController: UIViewController {
     
+    @IBOutlet weak var speedText: UITextField!
+    
     var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
@@ -51,6 +53,16 @@ class FirstViewController: UIViewController {
             audioPlayer.play()
         }
     }
+    
+//    func changeSpeed(){
+//        if(speedText.text != nil){
+//            let alertController = UIAlertController(title: "Input needed", message:
+//                "Please put in speed", preferredStyle: UIAlertControllerStyle.alert)
+//            alertController.addAction(UIAlertAction(title: "NEW GAME", style: UIAlertActionStyle.default,handler: nil))
+//            
+//            self.present(alertController, animated: true, completion: nil)
+//        }
+//    }
     
 }
 
