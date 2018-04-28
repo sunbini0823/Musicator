@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324EBAC7209538DA001C9740 /* Avicii - Wake Me Up (Lyric Video).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 324EBAC3209538D9001C9740 /* Avicii - Wake Me Up (Lyric Video).mp3 */; };
+		324EBAC8209538DA001C9740 /* Avicii - The Days Lyrics.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 324EBAC4209538D9001C9740 /* Avicii - The Days Lyrics.mp3 */; };
+		324EBAC9209538DA001C9740 /* Avicii - Waiting For Love (Lyric Video) (1).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 324EBAC5209538DA001C9740 /* Avicii - Waiting For Love (Lyric Video) (1).mp3 */; };
+		324EBACA209538DA001C9740 /* Avicii - Hey Brother (Lyric) (2).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 324EBAC6209538DA001C9740 /* Avicii - Hey Brother (Lyric) (2).mp3 */; };
 		BCBB3E102075597800C561D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB3E0F2075597800C561D9 /* AppDelegate.swift */; };
 		BCBB3E122075597800C561D9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB3E112075597800C561D9 /* FirstViewController.swift */; };
 		BCBB3E142075597800C561D9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB3E132075597800C561D9 /* SecondViewController.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		324EBAC3209538D9001C9740 /* Avicii - Wake Me Up (Lyric Video).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Avicii - Wake Me Up (Lyric Video).mp3"; sourceTree = "<group>"; };
+		324EBAC4209538D9001C9740 /* Avicii - The Days Lyrics.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Avicii - The Days Lyrics.mp3"; sourceTree = "<group>"; };
+		324EBAC5209538DA001C9740 /* Avicii - Waiting For Love (Lyric Video) (1).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Avicii - Waiting For Love (Lyric Video) (1).mp3"; sourceTree = "<group>"; };
+		324EBAC6209538DA001C9740 /* Avicii - Hey Brother (Lyric) (2).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Avicii - Hey Brother (Lyric) (2).mp3"; sourceTree = "<group>"; };
 		BCBB3E0C2075597800C561D9 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBB3E0F2075597800C561D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCBB3E112075597800C561D9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +143,10 @@
 			isa = PBXGroup;
 			children = (
 				BCBB3E4020755EAC00C561D9 /* sample1.mp3 */,
+				324EBAC6209538DA001C9740 /* Avicii - Hey Brother (Lyric) (2).mp3 */,
+				324EBAC4209538D9001C9740 /* Avicii - The Days Lyrics.mp3 */,
+				324EBAC5209538DA001C9740 /* Avicii - Waiting For Love (Lyric Video) (1).mp3 */,
+				324EBAC3209538D9001C9740 /* Avicii - Wake Me Up (Lyric Video).mp3 */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -246,10 +258,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324EBAC7209538DA001C9740 /* Avicii - Wake Me Up (Lyric Video).mp3 in Resources */,
+				324EBAC9209538DA001C9740 /* Avicii - Waiting For Love (Lyric Video) (1).mp3 in Resources */,
 				BCBB3E1C2075597800C561D9 /* LaunchScreen.storyboard in Resources */,
 				BCBB3E4120755EAC00C561D9 /* sample1.mp3 in Resources */,
 				BCBB3E192075597800C561D9 /* Assets.xcassets in Resources */,
+				324EBAC8209538DA001C9740 /* Avicii - The Days Lyrics.mp3 in Resources */,
 				BCBB3E172075597800C561D9 /* Main.storyboard in Resources */,
+				324EBACA209538DA001C9740 /* Avicii - Hey Brother (Lyric) (2).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
