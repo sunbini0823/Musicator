@@ -20,6 +20,8 @@
 		BCBB3E272075597800C561D9 /* MusicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB3E262075597800C561D9 /* MusicAppTests.swift */; };
 		BCBB3E322075597800C561D9 /* MusicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB3E312075597800C561D9 /* MusicAppUITests.swift */; };
 		BCBB3E4120755EAC00C561D9 /* sample1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBB3E4020755EAC00C561D9 /* sample1.mp3 */; };
+		BCED42BA209551DE00355804 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = BCED42B9209551DE00355804 /* stop.png */; };
+		BCED42BC209551E300355804 /* loop.png in Resources */ = {isa = PBXBuildFile; fileRef = BCED42BB209551E300355804 /* loop.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		BCBB3E312075597800C561D9 /* MusicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppUITests.swift; sourceTree = "<group>"; };
 		BCBB3E332075597800C561D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCBB3E4020755EAC00C561D9 /* sample1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample1.mp3; sourceTree = "<group>"; };
+		BCED42B9209551DE00355804 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		BCED42BB209551E300355804 /* loop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		BCBB3E0E2075597800C561D9 /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				BCED42B820954F1100355804 /* Symbol */,
 				BCBB3E3F20755E0800C561D9 /* Music */,
 				BCBB3E0F2075597800C561D9 /* AppDelegate.swift */,
 				BCBB3E112075597800C561D9 /* FirstViewController.swift */,
@@ -149,6 +154,15 @@
 				324EBAC3209538D9001C9740 /* Avicii - Wake Me Up (Lyric Video).mp3 */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		BCED42B820954F1100355804 /* Symbol */ = {
+			isa = PBXGroup;
+			children = (
+				BCED42B9209551DE00355804 /* stop.png */,
+				BCED42BB209551E300355804 /* loop.png */,
+			);
+			path = Symbol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +275,9 @@
 				324EBAC7209538DA001C9740 /* Avicii - Wake Me Up (Lyric Video).mp3 in Resources */,
 				324EBAC9209538DA001C9740 /* Avicii - Waiting For Love (Lyric Video) (1).mp3 in Resources */,
 				BCBB3E1C2075597800C561D9 /* LaunchScreen.storyboard in Resources */,
+				BCED42BA209551DE00355804 /* stop.png in Resources */,
 				BCBB3E4120755EAC00C561D9 /* sample1.mp3 in Resources */,
+				BCED42BC209551E300355804 /* loop.png in Resources */,
 				BCBB3E192075597800C561D9 /* Assets.xcassets in Resources */,
 				324EBAC8209538DA001C9740 /* Avicii - The Days Lyrics.mp3 in Resources */,
 				BCBB3E172075597800C561D9 /* Main.storyboard in Resources */,
