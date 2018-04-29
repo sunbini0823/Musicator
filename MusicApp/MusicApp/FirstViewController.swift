@@ -25,12 +25,16 @@ class FirstViewController: UIViewController {
     var loopTimer = Timer()
     var loopBool = false
     var difference = Float(0.0)
+    @IBOutlet weak var currTime: UILabel!
+    @IBOutlet weak var duration: UILabel!
+    var songName = ""
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
     
         do{
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "sample1", ofType: "mp3")!))
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: songName, ofType: "mp3")!))
             audioPlayer.prepareToPlay()
         }
         catch{
@@ -39,6 +43,7 @@ class FirstViewController: UIViewController {
         audioPlayer.play()
         musicSlider.maximumValue = Float(audioPlayer.duration)
         changeTimer()
+        duration.text = String(audioPlayer.duration.rounded())
         
     }
 
@@ -76,7 +81,7 @@ class FirstViewController: UIViewController {
     
 
     @IBAction func speedButton(_ sender: Any) {
-        if(speedText.text == nil){
+        if(speedText.text?.count == 0){
             let alertController = UIAlertController(title: "Input needed", message:
                 "Please put in speed", preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "Input", style: UIAlertActionStyle.default,handler: nil))
@@ -102,6 +107,7 @@ class FirstViewController: UIViewController {
     @objc func updateSlider(){
         musicSlider.value = Float(audioPlayer.currentTime)
         NSLog("update Slider working")
+        currTime.text = String(audioPlayer.currentTime.rounded())
     }
     
     @objc func updateLoop(){
@@ -125,17 +131,32 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func loopButtonPressed(_ sender: Any) {
-        if (loopBool == false){
-            loopBool = true
-            loopStartEnd()
-            loopButton.setImage(UIImage(named: "stop.png"), for: .normal)
+        if (startLoop.text?.count == 0 || endLoop.text?.count == 0){
+            let alertController = UIAlertController(title: "Input needed", message:
+                "Please put in loop times", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Input", style: UIAlertActionStyle.default,handler: nil))
+            
+            self.present(alertController, animated: true, completion: nil)
         } else {
-            loopBool = false
-            loopTimer.invalidate()
-            loopButton.setImage(UIImage(named: "loop.png"), for: .normal)
+            if (loopBool == false){
+                loopBool = true
+                loopStartEnd()
+                loopButton.setImage(UIImage(named: "stop.png"), for: .normal)
+            } else {
+                loopBool = false
+                loopTimer.invalidate()
+                loopButton.setImage(UIImage(named: "loop.png"), for: .normal)
+            }
         }
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        audioPlayer.stop()
+        performSegue(withIdentifier: "backToTable", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        songName = ""
+    }
 
     
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O0p-XR-88b">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Second-->
+        <!--First-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="MusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="First" id="9pv-A4-QxB" customClass="FirstViewController" customModule="MusicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,11 +43,11 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UUc-jx-GSI">
-                                <rect key="frame" x="67" y="47" width="240" height="216"/>
+                                <rect key="frame" x="155" y="121" width="111" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EL0-Ia-9kG">
-                                <rect key="frame" x="71" y="303" width="238" height="30"/>
+                                <rect key="frame" x="49" y="290" width="277" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="changeTime:" destination="9pv-A4-QxB" eventType="valueChanged" id="5hm-IX-5g8"/>
@@ -111,12 +111,37 @@
                                     <action selector="loopButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="HYS-4T-UdG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDF-IK-3Sr">
+                                <rect key="frame" x="257" y="323" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="currTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoZ-MD-YwF">
+                                <rect key="frame" x="155" y="323" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC9-g0-GQX">
+                                <rect key="frame" x="32" y="20" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="EU9-Hp-313"/>
+                                    <segue destination="O0p-XR-88b" kind="show" identifier="backToTable" id="deB-ro-d6S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="currTime" destination="yoZ-MD-YwF" id="q1K-Dz-Qmp"/>
+                        <outlet property="duration" destination="aDF-IK-3Sr" id="72b-UV-qWG"/>
                         <outlet property="endLoop" destination="ZOl-TW-ziq" id="sLC-eR-BqY"/>
                         <outlet property="loopButton" destination="L6m-17-K3n" id="PT8-2b-3Mb"/>
                         <outlet property="musicSlider" destination="EL0-Ia-9kG" id="4Yf-Az-eJ3"/>
@@ -128,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="885.60000000000002" y="300"/>
         </scene>
-        <!--First-->
+        <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="MusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Second" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="MusicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,42 +180,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887" y="-445"/>
+            <point key="canvasLocation" x="-719" y="300"/>
         </scene>
         <!--Item-->
         <scene sceneID="T5C-rn-FaX">
             <objects>
-                <viewController id="O0p-XR-88b" sceneMemberID="viewController">
+                <viewController id="O0p-XR-88b" customClass="TableViewController" customModule="MusicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V31-pi-b1t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z9R-hn-gEf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="yXn-g5-V0k">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yXn-g5-V0k" id="3dH-tC-X8Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="O0p-XR-88b" id="G0m-9O-5QA"/>
+                                    <outlet property="delegate" destination="O0p-XR-88b" id="Lbe-lB-o9l"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z9R-hn-gEf" firstAttribute="trailing" secondItem="bOX-ma-o3u" secondAttribute="trailing" id="OTq-qX-xkv"/>
+                            <constraint firstItem="Z9R-hn-gEf" firstAttribute="bottom" secondItem="bOX-ma-o3u" secondAttribute="bottom" id="XLQ-DI-Q8b"/>
+                            <constraint firstItem="Z9R-hn-gEf" firstAttribute="top" secondItem="V31-pi-b1t" secondAttribute="top" id="hL7-Qg-JL2"/>
+                            <constraint firstItem="Z9R-hn-gEf" firstAttribute="leading" secondItem="bOX-ma-o3u" secondAttribute="leading" id="wZM-fh-9Gu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bOX-ma-o3u"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Qf6-DF-jUM"/>
+                    <connections>
+                        <outlet property="songList" destination="Z9R-hn-gEf" id="agW-ZP-3wy"/>
+                        <segue destination="9pv-A4-QxB" kind="show" identifier="playSong" id="8Qy-uJ-L9G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lML-sO-BAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="1155"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="yl2-sM-qoP">
-            <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
-                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="O0p-XR-88b" kind="relationship" relationship="viewControllers" id="jls-fs-lBI"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="111" y="300"/>
         </scene>
     </scenes>
     <resources>
