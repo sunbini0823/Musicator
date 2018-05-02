@@ -10,6 +10,9 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBAction func load(_ sender: Any) {
+        performSegue(withIdentifier: "show", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

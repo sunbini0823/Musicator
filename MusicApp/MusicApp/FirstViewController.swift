@@ -20,6 +20,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var endLoop: UITextField!
     
     @IBOutlet weak var loopButton: UIButton!
+    @IBOutlet weak var songPicture: UIImageView!
     var audioPlayer = AVAudioPlayer()
     var timer = Timer()
     var loopTimer = Timer()
@@ -28,6 +29,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var currTime: UILabel!
     @IBOutlet weak var duration: UILabel!
     var songName = ""
+    var art = UIImage()
     
 
     override func viewDidLoad() {
@@ -36,6 +38,7 @@ class FirstViewController: UIViewController {
         do{
             audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: songName, ofType: "mp3")!))
             audioPlayer.prepareToPlay()
+            songPicture.image = art
         }
         catch{
             print(error)
@@ -130,10 +133,29 @@ class FirstViewController: UIViewController {
         }
     }
     
+    
     @IBAction func loopButtonPressed(_ sender: Any) {
         if (startLoop.text?.count == 0 || endLoop.text?.count == 0){
             let alertController = UIAlertController(title: "Input needed", message:
                 "Please put in loop times", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Input", style: UIAlertActionStyle.default,handler: nil))
+            
+            self.present(alertController, animated: true, completion: nil)
+        } else if(Int(startLoop.text!) == nil || Int(endLoop.text!) == nil) {
+            let alertController = UIAlertController(title: "Wrong input", message:
+                "Input has to be a number", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Input", style: UIAlertActionStyle.default,handler: nil))
+            
+            self.present(alertController, animated: true, completion: nil)
+        } else if(Int(startLoop.text!)! < 0 || Int(endLoop.text!)! < 0) {
+            let alertController = UIAlertController(title: "Wrong input", message:
+                "Input has to be bigger than 0", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Input", style: UIAlertActionStyle.default,handler: nil))
+            
+            self.present(alertController, animated: true, completion: nil)
+        } else if(Int(startLoop.text!)! >= Int(endLoop.text!)!) {
+            let alertController = UIAlertController(title: "Wrong input", message:
+                "Start time has to be earlier than end time", preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "Input", style: UIAlertActionStyle.default,handler: nil))
             
             self.present(alertController, animated: true, completion: nil)

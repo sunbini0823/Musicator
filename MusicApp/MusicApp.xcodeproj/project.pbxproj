@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0E68B12099B20A000209DB /* Musicator.png in Resources */ = {isa = PBXBuildFile; fileRef = BC0E68B02099B20A000209DB /* Musicator.png */; };
+		BC0E68B92099B3E7000209DB /* Tokyo Drift - Teriyaki Boyz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC0E68B22099B3E6000209DB /* Tokyo Drift - Teriyaki Boyz.mp3 */; };
+		BC0E68BA2099B3E7000209DB /* We Can't Stop - Miley Cyrus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC0E68B32099B3E6000209DB /* We Can't Stop - Miley Cyrus.mp3 */; };
+		BC0E68BB2099B3E7000209DB /* Malibu - Miley Cyrus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC0E68B42099B3E6000209DB /* Malibu - Miley Cyrus.mp3 */; };
+		BC0E68BC2099B3E7000209DB /* Whistle - Flo Rida.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC0E68B52099B3E6000209DB /* Whistle - Flo Rida.mp3 */; };
+		BC0E68BD2099B3E7000209DB /* Price Tag - Jessie J.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC0E68B62099B3E7000209DB /* Price Tag - Jessie J.mp3 */; };
+		BC0E68BF2099B3E7000209DB /* Starships - Nicki Minaj.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC0E68B82099B3E7000209DB /* Starships - Nicki Minaj.mp3 */; };
+		BC0E68C52099B54E000209DB /* Wake Me Up - Avicii.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC0E68C02099B54D000209DB /* Wake Me Up - Avicii.mp3 */; };
+		BC0E68C62099B54E000209DB /* Waiting for Love - Avicii.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC0E68C12099B54D000209DB /* Waiting for Love - Avicii.mp3 */; };
+		BC0E68C72099B54E000209DB /* Hey Brother - Avicii.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC0E68C22099B54D000209DB /* Hey Brother - Avicii.mp3 */; };
+		BC0E68C82099B54E000209DB /* The Nights - Avicii.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC0E68C32099B54E000209DB /* The Nights - Avicii.mp3 */; };
+		BC0E68C92099B54E000209DB /* The Days - Avicii.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC0E68C42099B54E000209DB /* The Days - Avicii.mp3 */; };
+		BC0E68CB2099B56E000209DB /* Can't Hold Us - Macklemore & Ryan Lewis.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC0E68CA2099B56E000209DB /* Can't Hold Us - Macklemore & Ryan Lewis.mp3 */; };
 		BCBB3E102075597800C561D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB3E0F2075597800C561D9 /* AppDelegate.swift */; };
 		BCBB3E122075597800C561D9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB3E112075597800C561D9 /* FirstViewController.swift */; };
 		BCBB3E142075597800C561D9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB3E132075597800C561D9 /* SecondViewController.swift */; };
@@ -15,14 +28,9 @@
 		BCBB3E1C2075597800C561D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBB3E1A2075597800C561D9 /* LaunchScreen.storyboard */; };
 		BCBB3E272075597800C561D9 /* MusicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB3E262075597800C561D9 /* MusicAppTests.swift */; };
 		BCBB3E322075597800C561D9 /* MusicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB3E312075597800C561D9 /* MusicAppUITests.swift */; };
-		BCBB3E4120755EAC00C561D9 /* Avicii - The Nights.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBB3E4020755EAC00C561D9 /* Avicii - The Nights.mp3 */; };
 		BCED42BA209551DE00355804 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = BCED42B9209551DE00355804 /* stop.png */; };
 		BCED42BC209551E300355804 /* loop.png in Resources */ = {isa = PBXBuildFile; fileRef = BCED42BB209551E300355804 /* loop.png */; };
 		BCED42BE20955BFA00355804 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED42BD20955BFA00355804 /* TableViewController.swift */; };
-		BCED42C020955DD300355804 /* Avicii - The Days.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCED42BF20955DD300355804 /* Avicii - The Days.mp3 */; };
-		BCED42C220955DE300355804 /* Avicii - Waiting For Love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCED42C120955DE300355804 /* Avicii - Waiting For Love.mp3 */; };
-		BCED42C420955DE700355804 /* Avicii - Hey Brother.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCED42C320955DE700355804 /* Avicii - Hey Brother.mp3 */; };
-		BCED42C620955DEB00355804 /* Avicii - Wake Me Up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCED42C520955DEB00355804 /* Avicii - Wake Me Up.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +51,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC0E68B02099B20A000209DB /* Musicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Musicator.png; sourceTree = "<group>"; };
+		BC0E68B22099B3E6000209DB /* Tokyo Drift - Teriyaki Boyz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Tokyo Drift - Teriyaki Boyz.mp3"; path = "MusicApp/Files for musicator/Tokyo Drift - Teriyaki Boyz.mp3"; sourceTree = SOURCE_ROOT; };
+		BC0E68B32099B3E6000209DB /* We Can't Stop - Miley Cyrus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "We Can't Stop - Miley Cyrus.mp3"; path = "MusicApp/Files for musicator/We Can't Stop - Miley Cyrus.mp3"; sourceTree = SOURCE_ROOT; };
+		BC0E68B42099B3E6000209DB /* Malibu - Miley Cyrus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Malibu - Miley Cyrus.mp3"; path = "MusicApp/Files for musicator/Malibu - Miley Cyrus.mp3"; sourceTree = SOURCE_ROOT; };
+		BC0E68B52099B3E6000209DB /* Whistle - Flo Rida.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Whistle - Flo Rida.mp3"; path = "MusicApp/Files for musicator/Whistle - Flo Rida.mp3"; sourceTree = SOURCE_ROOT; };
+		BC0E68B62099B3E7000209DB /* Price Tag - Jessie J.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Price Tag - Jessie J.mp3"; path = "MusicApp/Files for musicator/Price Tag - Jessie J.mp3"; sourceTree = SOURCE_ROOT; };
+		BC0E68B82099B3E7000209DB /* Starships - Nicki Minaj.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Starships - Nicki Minaj.mp3"; path = "MusicApp/Files for musicator/Starships - Nicki Minaj.mp3"; sourceTree = SOURCE_ROOT; };
+		BC0E68C02099B54D000209DB /* Wake Me Up - Avicii.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Wake Me Up - Avicii.mp3"; path = "MusicApp/Files for musicator/Wake Me Up - Avicii.mp3"; sourceTree = SOURCE_ROOT; };
+		BC0E68C12099B54D000209DB /* Waiting for Love - Avicii.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Waiting for Love - Avicii.mp3"; path = "MusicApp/Files for musicator/Waiting for Love - Avicii.mp3"; sourceTree = SOURCE_ROOT; };
+		BC0E68C22099B54D000209DB /* Hey Brother - Avicii.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Hey Brother - Avicii.mp3"; path = "MusicApp/Files for musicator/Hey Brother - Avicii.mp3"; sourceTree = SOURCE_ROOT; };
+		BC0E68C32099B54E000209DB /* The Nights - Avicii.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "The Nights - Avicii.mp3"; path = "MusicApp/Files for musicator/The Nights - Avicii.mp3"; sourceTree = SOURCE_ROOT; };
+		BC0E68C42099B54E000209DB /* The Days - Avicii.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "The Days - Avicii.mp3"; path = "MusicApp/Files for musicator/The Days - Avicii.mp3"; sourceTree = SOURCE_ROOT; };
+		BC0E68CA2099B56E000209DB /* Can't Hold Us - Macklemore & Ryan Lewis.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Can't Hold Us - Macklemore & Ryan Lewis.mp3"; path = "MusicApp/Files for musicator/Can't Hold Us - Macklemore & Ryan Lewis.mp3"; sourceTree = SOURCE_ROOT; };
 		BCBB3E0C2075597800C561D9 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBB3E0F2075597800C561D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCBB3E112075597800C561D9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -57,14 +78,9 @@
 		BCBB3E2D2075597800C561D9 /* MusicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBB3E312075597800C561D9 /* MusicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppUITests.swift; sourceTree = "<group>"; };
 		BCBB3E332075597800C561D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCBB3E4020755EAC00C561D9 /* Avicii - The Nights.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Avicii - The Nights.mp3"; sourceTree = "<group>"; };
 		BCED42B9209551DE00355804 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
 		BCED42BB209551E300355804 /* loop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loop.png; sourceTree = "<group>"; };
 		BCED42BD20955BFA00355804 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		BCED42BF20955DD300355804 /* Avicii - The Days.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Avicii - The Days.mp3"; sourceTree = "<group>"; };
-		BCED42C120955DE300355804 /* Avicii - Waiting For Love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Avicii - Waiting For Love.mp3"; sourceTree = "<group>"; };
-		BCED42C320955DE700355804 /* Avicii - Hey Brother.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Avicii - Hey Brother.mp3"; sourceTree = "<group>"; };
-		BCED42C520955DEB00355804 /* Avicii - Wake Me Up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Avicii - Wake Me Up.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,11 +166,18 @@
 		BCBB3E3F20755E0800C561D9 /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				BCED42BF20955DD300355804 /* Avicii - The Days.mp3 */,
-				BCBB3E4020755EAC00C561D9 /* Avicii - The Nights.mp3 */,
-				BCED42C120955DE300355804 /* Avicii - Waiting For Love.mp3 */,
-				BCED42C320955DE700355804 /* Avicii - Hey Brother.mp3 */,
-				BCED42C520955DEB00355804 /* Avicii - Wake Me Up.mp3 */,
+				BC0E68B42099B3E6000209DB /* Malibu - Miley Cyrus.mp3 */,
+				BC0E68B62099B3E7000209DB /* Price Tag - Jessie J.mp3 */,
+				BC0E68B82099B3E7000209DB /* Starships - Nicki Minaj.mp3 */,
+				BC0E68CA2099B56E000209DB /* Can't Hold Us - Macklemore & Ryan Lewis.mp3 */,
+				BC0E68B22099B3E6000209DB /* Tokyo Drift - Teriyaki Boyz.mp3 */,
+				BC0E68C22099B54D000209DB /* Hey Brother - Avicii.mp3 */,
+				BC0E68C42099B54E000209DB /* The Days - Avicii.mp3 */,
+				BC0E68C32099B54E000209DB /* The Nights - Avicii.mp3 */,
+				BC0E68C12099B54D000209DB /* Waiting for Love - Avicii.mp3 */,
+				BC0E68C02099B54D000209DB /* Wake Me Up - Avicii.mp3 */,
+				BC0E68B32099B3E6000209DB /* We Can't Stop - Miley Cyrus.mp3 */,
+				BC0E68B52099B3E6000209DB /* Whistle - Flo Rida.mp3 */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -164,6 +187,7 @@
 			children = (
 				BCED42B9209551DE00355804 /* stop.png */,
 				BCED42BB209551E300355804 /* loop.png */,
+				BC0E68B02099B20A000209DB /* Musicator.png */,
 			);
 			path = Symbol;
 			sourceTree = "<group>";
@@ -275,16 +299,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCED42C020955DD300355804 /* Avicii - The Days.mp3 in Resources */,
-				BCED42C420955DE700355804 /* Avicii - Hey Brother.mp3 in Resources */,
+				BC0E68C82099B54E000209DB /* The Nights - Avicii.mp3 in Resources */,
 				BCBB3E1C2075597800C561D9 /* LaunchScreen.storyboard in Resources */,
 				BCED42BA209551DE00355804 /* stop.png in Resources */,
-				BCBB3E4120755EAC00C561D9 /* Avicii - The Nights.mp3 in Resources */,
+				BC0E68B12099B20A000209DB /* Musicator.png in Resources */,
+				BC0E68C92099B54E000209DB /* The Days - Avicii.mp3 in Resources */,
+				BC0E68C72099B54E000209DB /* Hey Brother - Avicii.mp3 in Resources */,
+				BC0E68BF2099B3E7000209DB /* Starships - Nicki Minaj.mp3 in Resources */,
 				BCED42BC209551E300355804 /* loop.png in Resources */,
-				BCED42C220955DE300355804 /* Avicii - Waiting For Love.mp3 in Resources */,
+				BC0E68B92099B3E7000209DB /* Tokyo Drift - Teriyaki Boyz.mp3 in Resources */,
+				BC0E68BB2099B3E7000209DB /* Malibu - Miley Cyrus.mp3 in Resources */,
+				BC0E68BA2099B3E7000209DB /* We Can't Stop - Miley Cyrus.mp3 in Resources */,
 				BCBB3E192075597800C561D9 /* Assets.xcassets in Resources */,
-				BCED42C620955DEB00355804 /* Avicii - Wake Me Up.mp3 in Resources */,
+				BC0E68C52099B54E000209DB /* Wake Me Up - Avicii.mp3 in Resources */,
+				BC0E68BC2099B3E7000209DB /* Whistle - Flo Rida.mp3 in Resources */,
+				BC0E68CB2099B56E000209DB /* Can't Hold Us - Macklemore & Ryan Lewis.mp3 in Resources */,
 				BCBB3E172075597800C561D9 /* Main.storyboard in Resources */,
+				BC0E68BD2099B3E7000209DB /* Price Tag - Jessie J.mp3 in Resources */,
+				BC0E68C62099B54E000209DB /* Waiting for Love - Avicii.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

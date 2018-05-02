@@ -36,6 +36,9 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if (segue.identifier == "playSong") {
             if let destinationViewController = segue.destination as? FirstViewController {
                 destinationViewController.songName = songName!
+                if let pic = UIImage(named: songName!) {
+                    destinationViewController.art = pic
+                }
             }
         }
     }
